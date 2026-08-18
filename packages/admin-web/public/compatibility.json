@@ -1,0 +1,181 @@
+{
+  "checked": "2026-08-18",
+  "apiBase": "http://192.0.2.10:8787",
+  "note": "Desktop column is official asar.gz (same JS as Mac/Windows). Refresh with pnpm test:compat.",
+  "rows": [
+    {
+      "version": "1.13.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.13.6",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.13.4",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.12.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.12.4",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.11.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.11.5",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.11.4",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.10.6",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.10.3",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.9.14",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.9.12",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.9.10",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.8.10",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.8.9",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.8.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.8.4",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.8.3",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.7.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.7.6",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.7.5",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.7.4",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.6.7",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.6.5",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.6.3",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.6.2",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.5.12",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.5.11",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    },
+    {
+      "version": "1.5.8",
+      "desktop": "ok",
+      "android": "ok",
+      "notes": []
+    }
+  ]
+}

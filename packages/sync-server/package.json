@@ -1,0 +1,29 @@
+{
+  "name": "@marekanite/sync-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --project unit"
+  },
+  "dependencies": {
+    "@hono/node-server": "catalog:app",
+    "@marekanite/client-patch": "workspace:*",
+    "@marekanite/host-bin": "workspace:*",
+    "@marekanite/sync-protocol": "workspace:*",
+    "hono": "catalog:app",
+    "ws": "catalog:app"
+  },
+  "devDependencies": {
+    "@marekanite/crypto-compat": "workspace:*",
+    "@marekanite/sync-client": "workspace:*",
+    "@types/node": "catalog:toolchain",
+    "@types/ws": "catalog:toolchain",
+    "tsx": "catalog:toolchain",
+    "typescript": "catalog:toolchain"
+  }
+}

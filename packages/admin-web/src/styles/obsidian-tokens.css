@@ -1,0 +1,118 @@
+/**
+ * Obsidian-adjacent design tokens from stock app.css (.theme-dark / .theme-light).
+ * Not a full port — semantic palette for the admin SPA.
+ */
+
+:root {
+  --accent-h: 258;
+  --accent-s: 88%;
+  --accent-l: 66%;
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-20);
+  --background-secondary-alt: var(--color-base-25);
+  --background-modifier-border: var(--color-base-30);
+  --background-modifier-border-hover: var(--color-base-35);
+  --background-modifier-border-focus: var(--color-accent);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-hover: color-mix(in srgb, var(--color-base-100) 8%, transparent);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --text-on-accent: #ffffff;
+  --text-accent: var(--color-accent-1);
+  --text-error: var(--color-red);
+  --text-success: var(--color-green);
+
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --interactive-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --interactive-accent-hover: var(--color-accent-1);
+
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 3),
+    calc(var(--accent-s) * 1.02),
+    calc(var(--accent-l) * 1.15)
+  );
+
+  --font-interface:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-monospace: ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas, monospace;
+
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+  --radius-xl: 12px;
+
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.12), 0 3.4px 6.7px rgba(0, 0, 0, 0.18);
+}
+
+.theme-dark {
+  color-scheme: dark;
+  --color-base-00: #1c1c1c;
+  --color-base-05: #212121;
+  --color-base-10: #232323;
+  --color-base-20: #282828;
+  --color-base-25: #2e2e2e;
+  --color-base-30: #333333;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #555555;
+  --color-base-50: #666666;
+  --color-base-60: #999999;
+  --color-base-70: #b3b3b3;
+  --color-base-100: #dadada;
+  --color-red: #fb464c;
+  --color-orange: #e9973f;
+  --color-yellow: #e0de71;
+  --color-green: #44cf6e;
+  --color-cyan: #53dfdd;
+  --color-blue: #027aff;
+  --color-purple: #a882ff;
+  --color-pink: #fa99cd;
+  --background-secondary-alt: var(--color-base-30);
+  --background-modifier-form-field: var(--color-base-25);
+  --background-modifier-cover: rgba(10, 10, 10, 0.45);
+  --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
+    0 2px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.theme-light {
+  color-scheme: light;
+  --color-base-00: #ffffff;
+  --color-base-05: #fcfcfc;
+  --color-base-10: #fafafa;
+  --color-base-20: #f6f6f6;
+  --color-base-25: #efefef;
+  --color-base-30: #e4e4e4;
+  --color-base-35: #dadada;
+  --color-base-40: #bdbdbd;
+  --color-base-50: #ababab;
+  --color-base-60: #707070;
+  --color-base-70: #5c5c5c;
+  --color-base-100: #222222;
+  --color-red: #e93147;
+  --color-orange: #ec7500;
+  --color-yellow: #e0ac00;
+  --color-green: #08b94e;
+  --color-cyan: #00bfbc;
+  --color-blue: #086ddd;
+  --color-purple: #7852ee;
+  --color-pink: #d53984;
+  --background-secondary-alt: var(--color-base-05);
+  --background-modifier-form-field: var(--color-base-00);
+  --background-modifier-cover: rgba(220, 220, 220, 0.5);
+  --color-accent-1: hsl(
+    calc(var(--accent-h) - 1),
+    calc(var(--accent-s) * 1.01),
+    calc(var(--accent-l) * 1.075)
+  );
+  --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.065);
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.04), 0 3.4px 6.7px rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.vue.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@marekanite/client-patch/replace-guide": [
+        "../client-patch/src/replace-guide.ts"
+      ],
+      "@marekanite/client-patch/android-install": [
+        "../client-patch/src/android-install.ts"
+      ]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

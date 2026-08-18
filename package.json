@@ -1,0 +1,39 @@
+{
+  "name": "marekanite",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Marekanite — unofficial self-hosted Obsidian Sync (Hono + SQLite) and client tools",
+  "packageManager": "pnpm@11.17.0",
+  "scripts": {
+    "check": "pnpm run typecheck && pnpm run lint",
+    "lint": "nice -n 19 node --max-old-space-size=6144 ./node_modules/eslint/bin/eslint.js --cache",
+    "build": "pnpm -r run build",
+    "dev": "pnpm --parallel --filter @marekanite/sync-server --filter @marekanite/admin-web dev",
+    "admin": "pnpm --filter @marekanite/admin-web dev",
+    "admin:build": "pnpm --filter @marekanite/admin-web build",
+    "test": "vitest run --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:compat": "vitest run --project compat",
+    "typecheck": "pnpm -r --if-present run typecheck",
+    "patch:desktop": "tsx packages/client-patch/src/cli.ts desktop",
+    "patch:android": "tsx packages/client-patch/src/cli.ts android"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:linters",
+    "@stylistic/eslint-plugin": "catalog:linters",
+    "eslint": "catalog:linters",
+    "eslint-import-resolver-typescript": "catalog:linters",
+    "eslint-plugin-import-x": "catalog:linters",
+    "eslint-plugin-unused-imports": "catalog:linters",
+    "eslint-plugin-vue": "catalog:linters",
+    "globals": "catalog:linters",
+    "typescript-eslint": "catalog:linters",
+    "vue-eslint-parser": "catalog:linters",
+    "tsx": "catalog:toolchain",
+    "typescript": "catalog:toolchain",
+    "vitest": "catalog:toolchain"
+  }
+}

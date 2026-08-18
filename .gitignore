@@ -1,0 +1,31 @@
+# deps & build caches
+**/node_modules
+**/dist
+.turbo
+**/.vite
+
+# secrets & local env
+.env
+.env.*
+!.env.example
+
+# runtime / local data
+.cache/
+data/
+.extract/
+artifacts/
+**/*.db
+**/*.db-journal
+**/*.db-wal
+**/*.db-shm
+admin.token
+**/apk-signing/
+
+# official / patched client binaries (never commit)
+**/*.asar
+**/*.apk
+
+# logs & OS
+*.log
+.DS_Store
+/.eslintcache

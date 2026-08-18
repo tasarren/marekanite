@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marekanite</title>
+    <link rel="icon" href="/marekanite-mark.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/marekanite-mark.png" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("marekanite_theme");
+          if (t !== "light" && t !== "dark") t = "dark";
+          document.documentElement.classList.remove("theme-dark", "theme-light");
+          document.documentElement.classList.add(
+            t === "light" ? "theme-light" : "theme-dark",
+          );
+        } catch (e) {
+          document.documentElement.classList.add("theme-dark");
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+Marekanite
+Copyright (c) 2026 the Marekanite authors
+
+This file applies only to original source code in this repository
+(the sync server, admin UI, protocol types, and client-patch tools).
+It does not grant any rights in Obsidian software, trademarks, artwork,
+binaries, or protocol owned by Dynalist Inc.
+
+Permission is granted to view, clone, and run this software for personal
+or household self-hosting.
+
+You may not:
+
+- sell this software or offer it as a hosted service for others;
+- distribute patched or unmodified official Obsidian desktop or Android
+  packages produced with these tools.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
+
+Marekanite™ is an unregistered mark of the authors. Obsidian® is a
+trademark of Dynalist Inc. This project is unofficial and is not
+affiliated with, endorsed by, or sponsored by Dynalist Inc.
+
+Obsidian’s Terms of Service restrict reverse engineering and modifying
+the official Software. Using this project may conflict with those terms.
+You are responsible for how you use it.

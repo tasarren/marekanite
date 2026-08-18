@@ -1,0 +1,216 @@
+@import "tailwindcss";
+@import "./styles/obsidian-tokens.css";
+
+@theme {
+  --color-primary: var(--background-primary);
+  --color-primary-alt: var(--background-primary-alt);
+  --color-secondary: var(--background-secondary);
+  --color-secondary-alt: var(--background-secondary-alt);
+  --color-border: var(--background-modifier-border);
+  --color-border-hover: var(--background-modifier-border-hover);
+  --color-field: var(--background-modifier-form-field);
+  --color-hover: var(--background-modifier-hover);
+  --color-normal: var(--text-normal);
+  --color-muted: var(--text-muted);
+  --color-faint: var(--text-faint);
+  --color-accent: var(--interactive-accent);
+  --color-accent-hover: var(--interactive-accent-hover);
+  --color-on-accent: var(--text-on-accent);
+  --color-error: var(--color-red);
+  --color-success: var(--color-green);
+  --color-interactive: var(--interactive-normal);
+  --color-interactive-hover: var(--interactive-hover);
+  --radius-obs-s: var(--radius-s);
+  --radius-obs-m: var(--radius-m);
+  --radius-obs-l: var(--radius-l);
+  --radius-obs-xl: var(--radius-xl);
+  --font-interface: var(--font-interface);
+  --font-mono: var(--font-monospace);
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background-primary);
+  color: var(--text-normal);
+  font-family: var(--font-interface);
+}
+
+#app {
+  min-h: 100vh;
+  min-height: 100vh;
+}
+
+/* Focus ring matching Obsidian accent */
+:focus-visible {
+  outline: 2px solid var(--interactive-accent);
+  outline-offset: 1px;
+}
+
+/* Form controls base */
+.o-input {
+  width: 100%;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-modifier-form-field);
+  color: var(--text-normal);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  box-shadow: var(--input-shadow);
+  transition: border-color 0.12s ease;
+}
+.o-input:hover {
+  border-color: var(--background-modifier-border-hover);
+}
+.o-input:focus {
+  border-color: var(--interactive-accent);
+  outline: none;
+}
+.o-input::placeholder {
+  color: var(--text-faint);
+}
+
+.o-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  border-radius: var(--radius-m);
+  border: 1px solid transparent;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.12s ease, border-color 0.12s ease, opacity 0.12s ease;
+}
+.o-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.o-btn-cta {
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.o-btn-cta:hover:not(:disabled) {
+  background: var(--interactive-accent-hover);
+}
+.o-btn-default {
+  background: var(--interactive-normal);
+  color: var(--text-normal);
+  border-color: var(--background-modifier-border);
+}
+.o-btn-default:hover:not(:disabled) {
+  background: var(--interactive-hover);
+}
+.o-btn-ghost {
+  background: transparent;
+  color: var(--text-muted);
+}
+.o-btn-ghost:hover:not(:disabled) {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+.o-btn-danger {
+  background: color-mix(in srgb, var(--color-red) 18%, transparent);
+  color: var(--color-red);
+  border-color: color-mix(in srgb, var(--color-red) 35%, transparent);
+}
+
+.o-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  box-shadow: var(--shadow-s);
+}
+
+.o-tab {
+  border-radius: var(--radius-m);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.o-tab:hover {
+  color: var(--text-normal);
+  background: var(--background-modifier-hover);
+}
+.o-tab-active {
+  color: var(--text-on-accent);
+  background: var(--interactive-accent);
+}
+
+.o-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  width: 100%;
+  text-align: left;
+  border-radius: var(--radius-l);
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.o-choice:hover {
+  border-color: var(--background-modifier-border-hover);
+  background: var(--background-modifier-hover);
+}
+.o-choice-active {
+  border-color: var(--interactive-accent);
+  background: color-mix(in srgb, var(--interactive-accent) 10%, var(--background-primary));
+}
+
+.wizard-rail {
+  display: flex;
+  gap: 0.25rem;
+}
+.wizard-rail-item {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.25rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: var(--text-faint);
+}
+.wizard-rail-item-current {
+  color: var(--text-normal);
+}
+.wizard-rail-item-done {
+  color: var(--text-muted);
+}
+.wizard-dot {
+  display: grid;
+  height: 1.6rem;
+  width: 1.6rem;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 999px;
+  border: 1.5px solid var(--background-modifier-border);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.wizard-rail-item-current .wizard-dot {
+  border-color: var(--interactive-accent);
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+.wizard-rail-item-done .wizard-dot {
+  border-color: var(--interactive-accent);
+  color: var(--interactive-accent);
+}
+.wizard-rail-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+name: marekanite
+
+services:
+  sync:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: marekanite:local
+    container_name: marekanite
+    restart: unless-stopped
+    environment:
+      LISTEN_HTTP: "0.0.0.0:8787"
+      PUBLIC_API_BASE: "${PUBLIC_API_BASE:?}"
+      PUBLIC_SYNC_HOST: "${PUBLIC_SYNC_HOST:-}"
+      MAREKANITE_ADMIN_TOKEN: "${MAREKANITE_ADMIN_TOKEN:-}"
+      DATABASE_PATH: /data/sync.db
+      STORAGE_LIMIT_BYTES: "${STORAGE_LIMIT_BYTES:-10737418240}"
+      PER_FILE_MAX: "${PER_FILE_MAX:-208666624}"
+    ports:
+      - target: 8787
+        published: "${HTTP_PORT:-8787}"
+    volumes:
+      - type: volume
+        source: sync-data
+        target: /data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8787/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 20s
+      retries: 3
+
+volumes:
+  sync-data: {}

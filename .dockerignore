@@ -1,0 +1,22 @@
+# deps & build caches
+**/node_modules
+**/dist
+.turbo
+**/.vite
+
+# runtime / local data
+data/
+**/*.db
+**/*.db-journal
+admin.token
+.extract/
+artifacts/
+
+# large client binaries (upload via admin UI instead)
+**/*.asar
+**/*.apk
+**/*.md
+# vcs / editor
+.git
+.gitignore
+*.log

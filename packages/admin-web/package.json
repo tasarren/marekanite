@@ -1,0 +1,29 @@
+{
+  "name": "@marekanite/admin-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@marekanite/client-patch": "workspace:*",
+    "@yume-chan/adb": "catalog:app",
+    "@yume-chan/adb-daemon-webusb": "catalog:app",
+    "@yume-chan/stream-extra": "catalog:app",
+    "pinia": "catalog:app",
+    "vue": "catalog:app",
+    "vue-router": "catalog:app"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "catalog:toolchain",
+    "@vitejs/plugin-vue": "catalog:toolchain",
+    "tailwindcss": "catalog:toolchain",
+    "typescript": "catalog:toolchain",
+    "vite": "catalog:toolchain",
+    "vue-tsc": "catalog:toolchain"
+  }
+}

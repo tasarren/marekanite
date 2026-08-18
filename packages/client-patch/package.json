@@ -1,0 +1,35 @@
+{
+  "name": "@marekanite/client-patch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./replace-guide": "./src/replace-guide.ts",
+    "./android-install": "./src/android-install.ts"
+  },
+  "bin": {
+    "marekanite-patch": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "desktop": "tsx src/cli.ts desktop",
+    "android": "tsx src/cli.ts android",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --project unit"
+  },
+  "dependencies": {
+    "@electron/asar": "catalog:app",
+    "@marekanite/host-bin": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:toolchain",
+    "tsx": "catalog:toolchain",
+    "typescript": "catalog:toolchain"
+  }
+}
