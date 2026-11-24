@@ -13,6 +13,7 @@
   <a href="package.json"><img src="https://img.shields.io/badge/node-%3E%3D24-44cf6e" alt="Node.js 24+" /></a>
   <a href="package.json"><img src="https://img.shields.io/badge/pnpm-11.17.0-orange" alt="pnpm 11.17.0" /></a>
   <a href="docs/protocol.md"><img src="https://img.shields.io/badge/Client%20Baseline-1.13.4-a882ff" alt="Supported Client Baseline 1.13.4" /></a>
+  <a href="https://ko-fi.com/tasarren"><img src="https://img.shields.io/badge/Ko--fi-Support-FF5E5B?logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
 </p>
 
 > [!NOTE]
@@ -143,3 +144,6 @@ graph TD
 
 See [NOTICE](NOTICE) for complete licensing terms. Marekanite is source-available for personal and household self-hosting. Redistribution of patched official binaries is strictly prohibited.
 
+## Support
+
+Tip on [Ko-fi](https://ko-fi.com/tasarren) or sponsor [@tasarren on GitHub](https://github.com/sponsors/tasarren). Both help keep this project moving.
